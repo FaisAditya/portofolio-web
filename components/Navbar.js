@@ -3,7 +3,6 @@ import Nav from "./Nav"
 import Button from "./Button"
 import { useState } from "react"
 import classnames from "classnames"
-import Image from "next/image"
 
 export default function Navbar() {
     const [offcanvas, setOffcanvas] = useState(false);
@@ -24,7 +23,7 @@ export default function Navbar() {
                     <Button href="#contact" pill variant="outline-yellow">KONTAK</Button>
                 </div>
                 <div className="w-9/12 md:hidden text-right">
-                    <Image src="/menu.svg" width={24} height={24} alt="menu" className="inline-block" onClick={() => setOffcanvas(true)} />
+                    <img src="/menu.svg" alt="menu" className="inline-block" onClick={() => setOffcanvas(true)} />
                 </div>
             </div>
 
