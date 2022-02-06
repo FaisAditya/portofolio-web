@@ -3,12 +3,13 @@ import Nav from "./Nav"
 import Button from "./Button"
 import { useState } from "react"
 import classnames from "classnames"
+import Image from "next/image"
 
 export default function Navbar() {
     const [offcanvas, setOffcanvas] = useState(false);
 
     return (
-        <>
+        <section className="container mx-auto">
             <div className="flex items-center py-10">
                 <div className="w-3/12 ">
                     <Logo />
@@ -23,18 +24,19 @@ export default function Navbar() {
                     <Button href="#contact" pill variant="outline-yellow">KONTAK</Button>
                 </div>
                 <div className="w-9/12 md:hidden text-right">
-                    <img src="/menu.svg" className="inline-block" onClick={() => setOffcanvas(true)} />
+                    <Image src="/menu.svg" width={24} height={24} alt="menu" className="inline-block" onClick={() => setOffcanvas(true)} />
                 </div>
             </div>
 
             <div className={classnames("fixed bg-white z-10 top-0 h-full w-full p-10 md:hidden transition-all", offcanvas ? "right-0" : "right-full")}>
-                <img src="/close.svg" className="absolute top-8 right-8 w-8" onClick={() => setOffcanvas(false)} />
+
+                <img src="/close.svg" alt="close" className="absolute top-8 right-8 w-8" onClick={() => setOffcanvas(false)} />
                 <Nav
                     scheme="dark"
                     dir="vertical"
                 />
             </div>
-        </>
+        </section>
 
     )
 
