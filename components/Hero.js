@@ -11,7 +11,8 @@ export default function Hero() {
             Saya Lulusan S1 Teknik Informatika Seorang Front-end Web Developer
           </h1>
           <p className="text-white text-opacity-60 text-lg 2xl:w-3/12 xl:w-4/12 lg:w-6/12 mt-6 mx-auto leading-relaxed">
-            Saya Sangat Tertarik Dengan Perkembangan Teknologi Komputer
+            Saya Senang Mempelajari sesuatu yang baru di dunia Teknologi
+            Komputer.
           </p>
           <Button href="#profile" pill variant="yellow" className="mt-14">
             Pelajari
