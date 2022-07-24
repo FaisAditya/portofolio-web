@@ -22,7 +22,7 @@ export default function Contact() {
                         <Item
                             icon="/phone.svg"
                             label="Phone"
-                            value="08991165579"
+                            value="089846830"
                             className="mt-6"
                         />
                         <Item
